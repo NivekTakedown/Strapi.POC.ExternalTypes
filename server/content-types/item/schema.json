@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secciones_generales_items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item (Simplificado)",
+    "description": "Un item simple con solo un título."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

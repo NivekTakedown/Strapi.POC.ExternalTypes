@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secciones_generales_page_structures",
+  "info": {
+    "singularName": "page-structure",
+    "pluralName": "page-structures",
+    "displayName": "Estructura de Página (Simplificada)",
+    "description": "Una estructura de página simple con solo un título."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
