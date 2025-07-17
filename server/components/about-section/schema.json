@@ -1,0 +1,17 @@
+{
+    "collectionName": "about_section_plugins",
+    "info": {
+        "name": "About Section",
+        "description": "Schema for the About Section plugin"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "unique": false
+        }
+    }
+}

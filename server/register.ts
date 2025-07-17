@@ -5,6 +5,9 @@ import aboutSectionSchema from './components/about-section/schema.json';
 import creditsSectionSchema from './components/credits-section/schema.json';
 import helpSectionSchema from './components/help-section/schema.json';
 import sitemapSectionSchema from './components/sitemap-section/schema.json';
+import heroSectionSchema from './components/hero-section/schema.json';
+import descriptionsCollectionSchema from './components/DescriptionsCollection/schema.json';
+import descriptionItemSchema from './components/description-item/schema.json';
 
 // Función para convertir kebab-case a PascalCase
 const toPascalCase = (str: string) => {
@@ -23,6 +26,9 @@ export default ({ strapi }: { strapi: Strapi }) => {
     { name: 'credits-section', schema: creditsSectionSchema },
     { name: 'help-section', schema: helpSectionSchema },
     { name: 'sitemap-section', schema: sitemapSectionSchema },
+    { name: 'hero-section', schema: heroSectionSchema },
+    { name: 'descriptions-collection', schema: descriptionsCollectionSchema },
+    { name: 'description-item', schema: descriptionItemSchema },
   ];
 
   componentsToRegister.forEach(({ name, schema }) => {

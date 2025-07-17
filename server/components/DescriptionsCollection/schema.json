@@ -1,0 +1,38 @@
+{
+    "collectionName": "descriptions_collection",
+    "info": {
+      "displayName": "Colección de descripciones(PluginComponent)",
+      "icon": "bulletList",
+      "description": "Coleccion de titulos y descripciones"
+    },
+    "options": {},
+    "attributes": {
+      "title": {
+        "type": "string",
+        "required": true,
+        "maxLength": 255,
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        }
+      },
+        "description": {
+            "type": "richtext",
+            "required": true,
+            "pluginOptions": {
+            "i18n": {
+                "localized": true
+            }
+            }
+        },
+      "items": {
+        "displayName": "Description Items",
+        "type": "component",
+        "repeatable": true,
+        "component": "secciones-generales.description-item",
+        "required": true,
+        "min": 1
+      }
+    }
+  }

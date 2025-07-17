@@ -25,3 +25,8 @@ export interface SitemapSection {
   content: Attribute.Blocks & Attribute.Required;
   sections?: Attribute.JSON;
 }
+
+export interface HeroSection {
+  title: Attribute.String & Attribute.Required & Attribute.MaxLength<255>;
+  image: Attribute.Media & Attribute.Required;
+}
