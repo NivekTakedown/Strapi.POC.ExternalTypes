@@ -11,6 +11,9 @@ import textFieldSchema from './components/text-field/schema.json';
 import optionSchema from './components/option/schema.json';
 import link from './components/link/schema.json';
 import redirectSection from './components/redirect-section/schema.json';
+import listItemSchema from './components/list-item/schema.json';
+import sectionlistSchema from './components/section-list/schema.json';
+import textPair from './components/text-pair/schema.json';
 
 // Función para convertir kebab-case a PascalCase
 const toPascalCase = (str: string) => {
@@ -37,6 +40,9 @@ export default ({ strapi }: { strapi: Strapi }) => {
     { name: 'option', schema: optionSchema },
     { name: 'link', schema: link },
     { name: 'redirect-section', schema: redirectSection },
+    { name: 'list-item', schema: listItemSchema },
+    { name: 'section-list', schema: sectionlistSchema },
+    { name: 'text-pair', schema: textPair },
   ];
 
   componentsToRegister.forEach(({ name, schema }) => {

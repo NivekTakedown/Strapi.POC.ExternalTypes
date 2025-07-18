@@ -1,0 +1,28 @@
+{
+    "collectionName": "list_item_component_p",
+    "info": {
+      "displayName": "Elemento de Lista",
+      "icon": "bulletList",
+      "description": "Elemento individual con dos textos para listas."
+    },
+    "options": {},
+    "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textPairs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones-generales.text-pair",
+      "required": true,
+      "min": 1
+    }
+  }
+}

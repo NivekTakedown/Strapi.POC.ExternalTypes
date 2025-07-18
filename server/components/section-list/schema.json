@@ -1,0 +1,37 @@
+{
+  "collectionName": "section_list_component_p",
+  "info": {
+    "displayName": "Lista de Sección",
+    "icon": "bulletList",
+    "description": "Sección con título opcional, descripción opcional y lista de elementos."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones-generales.list-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

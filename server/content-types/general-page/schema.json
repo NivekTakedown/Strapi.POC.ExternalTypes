@@ -45,7 +45,8 @@
           "secciones-generales.image",
           "secciones-generales.form-section",
           "secciones-generales.description-section",
-          "secciones-generales.redirect-section"
+          "secciones-generales.redirect-section",
+          "secciones-generales.section-list"
         ]
       }
     }
