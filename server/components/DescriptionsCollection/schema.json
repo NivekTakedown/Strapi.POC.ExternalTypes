@@ -1,5 +1,5 @@
 {
-    "collectionName": "descriptions_collection",
+    "collectionName": "descriptions_collection_component_p",
     "info": {
       "displayName": "Colección de descripciones(PluginComponent)",
       "icon": "bulletList",
@@ -7,25 +7,6 @@
     },
     "options": {},
     "attributes": {
-      "title": {
-        "type": "string",
-        "required": true,
-        "maxLength": 255,
-        "pluginOptions": {
-          "i18n": {
-            "localized": true
-          }
-        }
-      },
-        "description": {
-            "type": "richtext",
-            "required": true,
-            "pluginOptions": {
-            "i18n": {
-                "localized": true
-            }
-            }
-        },
       "items": {
         "displayName": "Description Items",
         "type": "component",

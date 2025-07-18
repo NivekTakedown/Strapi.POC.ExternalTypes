@@ -4,7 +4,7 @@
     "info": {
       "singularName": "general-page",
       "pluralName": "general-pages",
-      "displayName": "general pages (PluginComponent)",
+      "displayName": "general pages (PluginType)",
       "description": "Paginas generales para el plugin de secciones"
     },
     "options": {
@@ -24,22 +24,29 @@
         "required": true
       },
       "slug": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true,
-      "unique": true,
-      "maxLength": 255
+        "type": "uid",
+        "targetField": "title",
+        "required": true,
+        "unique": true,
+        "maxLength": 255
+      },
+      "visualType": {
+        "type": "relation",
+        "relation": "manyToOne",
+        "target": "plugin::secciones-generales.visual-type",
+        "inversedBy": "generalPages"
       },
       "dinamicComponents": {
-      "type": "dynamiczone",
-      "required": true,
-      "components": [
-        "secciones-generales.hero-section",
-        "secciones-generales.descriptions-collection",
-        "secciones-generales.image",
-        "secciones-generales.form-section",
-        "secciones-generales.text-field"
-      ]
+        "type": "dynamiczone",
+        "required": true,
+        "components": [
+          "secciones-generales.hero-section",
+          "secciones-generales.descriptions-collection",
+          "secciones-generales.image",
+          "secciones-generales.form-section",
+          "secciones-generales.description-section",
+          "secciones-generales.redirect-section"
+        ]
+      }
     }
-  }
-  }
+}

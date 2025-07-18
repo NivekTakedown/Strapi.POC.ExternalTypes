@@ -1,0 +1,37 @@
+{
+  "collectionName": "redirect_sections_component_p",
+  "info": {
+    "displayName": "Sección de Redirección",
+    "icon": "arrow-right",
+    "description": "Sección con título, descripción y enlaces de redirección."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "redirectLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones-generales.link",
+      "required": false,
+      "min": 0
+    }
+  }
+}
