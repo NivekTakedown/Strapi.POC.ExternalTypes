@@ -1,0 +1,29 @@
+{
+  "collectionName": "description_items_component_p",
+  "info": {
+    "displayName": "Description Item",
+    "icon": "align-left",
+    "description": "Un item con título y descripción para una colección."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

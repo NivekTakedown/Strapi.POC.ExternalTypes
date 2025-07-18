@@ -1,9 +1,7 @@
-import item from './item';
-import pageStructure from './page-structure';
-import acercaDelSitio from './acerca-del-sitio';
+import generalPage from './general-page';
+import visualType from './visual-type';
 
 export default {
-  item: { schema: item },
-  'page-structure': { schema: pageStructure },
-  'acerca-del-sitio': { schema: acercaDelSitio },
+  'general-page': { schema: generalPage },
+  'visual-type': { schema: visualType },
 };

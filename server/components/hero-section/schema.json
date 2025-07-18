@@ -1,0 +1,22 @@
+{
+  "collectionName": "hero_section_component_p",
+  "info": {
+    "displayName": "seccion de Hero (PluginComponent)",
+    "icon": "image",
+    "description": "Sección de Simple"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

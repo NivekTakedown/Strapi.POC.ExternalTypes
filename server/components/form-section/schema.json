@@ -1,0 +1,60 @@
+{
+  "collectionName": "form_section_component_p",
+  "info": {
+    "displayName": "Sección de Formulario",
+    "icon": "write",
+    "description": "Sección completa de formulario con campos desplegables, de texto y política de datos."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "dropdownFields": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones-generales.dropdown-field",
+      "required": false,
+      "min": 0
+    },
+    "textFields": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones-generales.text-field",
+      "required": false,
+      "min": 0
+    },
+    "dataPolicy": {
+      "type": "richtext",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "dataPolicyRequired": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "submitButtonText": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100,
+      "default": "Enviar",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

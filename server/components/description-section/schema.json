@@ -1,0 +1,22 @@
+{
+    "collectionName": "description_section_component_p",
+    "info": {
+      "displayName": "Description section",
+      "icon": "info",
+      "name": "description-section",
+      "pluralName": "description-sections",
+      "description": "Esta colección contiene la descripción de la sección."
+    },
+    "options": {},
+    "attributes": {
+      "description": {
+        "type": "richtext",
+        "required": true,
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        }
+      }
+    }
+  }

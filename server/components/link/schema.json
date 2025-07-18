@@ -1,24 +1,13 @@
 {
-  "collectionName": "components_credits_sections",
+  "collectionName": "link_component_p",
   "info": {
-    "displayName": "Credits Section",
-    "icon": "users",
-    "description": "Sección de créditos y equipos de trabajo"
+    "displayName": "Enlace de Redirección",
+    "icon": "external-link",
+    "description": "Componente con texto y enlace para redirecciones."
   },
   "options": {},
   "attributes": {
-    "backgroundImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": ["images"],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "title": {
+    "text": {
       "type": "string",
       "required": true,
       "maxLength": 255,
@@ -28,22 +17,30 @@
         }
       }
     },
-    "subtitle": {
-      "type": "text",
+    "url_label": {
+      "type": "string",
       "required": true,
+      "maxLength": 255,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "workTeams": {
-      "type": "json",
+    "url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

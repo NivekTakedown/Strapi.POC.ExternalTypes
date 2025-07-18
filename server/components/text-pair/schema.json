@@ -1,0 +1,31 @@
+{
+    "collectionName": "text_pair_component_p",
+    "info": {
+      "displayName": "Par de Textos(PluginComponent)",
+      "icon": "quote",
+      "description": "Componente con dos textos obligatorios."
+    },
+    "options": {},
+    "attributes": {
+      "firstText": {
+        "type": "string",
+        "required": true,
+        "maxLength": 255,
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        }
+      },
+      "secondText": {
+        "type": "string",
+        "required": true,
+        "maxLength": 255,
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        }
+      }
+    }
+  }

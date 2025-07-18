@@ -1,0 +1,53 @@
+{
+    "kind": "collectionType",
+    "collectionName": "general_sections_p",
+    "info": {
+      "singularName": "general-page",
+      "pluralName": "general-pages",
+      "displayName": "general pages (PluginType)",
+      "description": "Paginas generales para el plugin de secciones"
+    },
+    "options": {
+      "draftAndPublish": true
+    },
+    "pluginOptions": {
+      "content-manager": {
+        "visible": true
+      },
+      "content-type-builder": {
+        "visible": true
+      }
+    },
+    "attributes": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "slug": {
+        "type": "uid",
+        "targetField": "title",
+        "required": true,
+        "unique": true,
+        "maxLength": 255
+      },
+      "visualType": {
+        "type": "relation",
+        "relation": "manyToOne",
+        "target": "plugin::secciones-generales.visual-type",
+        "inversedBy": "generalPages"
+      },
+      "dinamicComponents": {
+        "type": "dynamiczone",
+        "required": true,
+        "components": [
+          "secciones-generales.hero-section",
+          "secciones-generales.descriptions-collection",
+          "secciones-generales.image",
+          "secciones-generales.form-section",
+          "secciones-generales.description-section",
+          "secciones-generales.redirect-section",
+          "secciones-generales.section-list"
+        ]
+      }
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "dropdown_fields_component_p",
+  "info": {
+    "displayName": "Campo Desplegable",
+    "icon": "chevron-down",
+    "description": "Campo desplegable con opciones para formularios."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "secciones-generales.option",
+      "required": true,
+      "min": 1
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

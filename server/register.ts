@@ -1,10 +1,19 @@
 import { Strapi } from '@strapi/strapi';
-
-// Importa los schemas de los componentes
-import aboutSectionSchema from './components/about-section/schema.json';
-import creditsSectionSchema from './components/credits-section/schema.json';
-import helpSectionSchema from './components/help-section/schema.json';
-import sitemapSectionSchema from './components/sitemap-section/schema.json';
+import heroSectionSchema from './components/hero-section/schema.json';
+import descriptionsCollectionSchema from './components/DescriptionsCollection/schema.json';
+import descriptionItemSchema from './components/description-item/schema.json';
+import image from './components/image/schema.json';
+import descriptionSectionSchema from './components/description-section/schema.json';
+// Importa los nuevos componentes del formulario
+import formSectionSchema from './components/form-section/schema.json';
+import dropdownFieldSchema from './components/dropdown-field/schema.json';
+import textFieldSchema from './components/text-field/schema.json';
+import optionSchema from './components/option/schema.json';
+import link from './components/link/schema.json';
+import redirectSection from './components/redirect-section/schema.json';
+import listItemSchema from './components/list-item/schema.json';
+import sectionlistSchema from './components/section-list/schema.json';
+import textPair from './components/text-pair/schema.json';
 
 // Función para convertir kebab-case a PascalCase
 const toPascalCase = (str: string) => {
@@ -19,10 +28,21 @@ export default ({ strapi }: { strapi: Strapi }) => {
   const category = 'secciones-generales';
 
   const componentsToRegister = [
-    { name: 'about-section', schema: aboutSectionSchema },
-    { name: 'credits-section', schema: creditsSectionSchema },
-    { name: 'help-section', schema: helpSectionSchema },
-    { name: 'sitemap-section', schema: sitemapSectionSchema },
+    { name: 'hero-section', schema: heroSectionSchema },
+    { name: 'descriptions-collection', schema: descriptionsCollectionSchema },
+    { name: 'description-item', schema: descriptionItemSchema },
+    { name: 'image', schema: image },
+    { name: 'description-section', schema: descriptionSectionSchema },
+// Nuevos componentes del formulario
+    { name: 'form-section', schema: formSectionSchema },
+    { name: 'dropdown-field', schema: dropdownFieldSchema },
+    { name: 'text-field', schema: textFieldSchema },
+    { name: 'option', schema: optionSchema },
+    { name: 'link', schema: link },
+    { name: 'redirect-section', schema: redirectSection },
+    { name: 'list-item', schema: listItemSchema },
+    { name: 'section-list', schema: sectionlistSchema },
+    { name: 'text-pair', schema: textPair },
   ];
 
   componentsToRegister.forEach(({ name, schema }) => {
