@@ -1,0 +1,26 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    env:
+      NPM_TOKEN_UNAL_OMD: ${{secrets.NPM_TOKEN_UNAL_OMD}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Update package version
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          npm version patch
+          git push
+      - name: Publish strapi package
+        run: npm publish --no-git-checks

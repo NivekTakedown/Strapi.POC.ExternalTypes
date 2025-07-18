@@ -1,12 +1,14 @@
 {
-  "name": "secciones-generales",
+  "name": "@unal-omd/secciones-generales",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "secciones-generales",
-    "description": "Description of secciones-generales plugin",
-    "kind": "plugin"
+    "name": "strapi-general-sections",
+    "description": "Plugin para crear páginas con secciones dinámicas y componentes reutilizables",
+    "kind": "plugin",
+    "displayName": "Paginas simples"
   },
+  
   "dependencies": {
     "@strapi/design-system": "^1.6.3",
     "@strapi/helper-plugin": "^4.6.0",
@@ -32,16 +34,25 @@
     "styled-components": "^5.2.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "LAB101-0MD-UNAL"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "LAB101-0MD-UNAL"
     }
   ],
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/",
+    "scope": "@unal-omd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UNAL-OMD/Unal.BE.Plugin.Strapi.Simple.Page.git"
   },
   "scripts": {
     "develop": "tsc -p tsconfig.server.json -w",
