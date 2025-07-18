@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_secciones_generales_text_fields",
+  "info": {
+    "displayName": "Campo de Texto",
+    "icon": "pencil",
+    "description": "Campo de texto para formularios."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "text": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

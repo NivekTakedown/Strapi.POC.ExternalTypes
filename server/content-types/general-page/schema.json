@@ -35,7 +35,10 @@
       "required": true,
       "components": [
         "secciones-generales.hero-section",
-        "secciones-generales.descriptions-collection"
+        "secciones-generales.descriptions-collection",
+        "secciones-generales.image",
+        "secciones-generales.form-section",
+        "secciones-generales.text-field"
       ]
     }
   }

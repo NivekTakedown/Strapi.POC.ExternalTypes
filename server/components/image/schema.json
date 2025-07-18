@@ -1,0 +1,19 @@
+{
+    "collectionName": "image_component_p",
+    "info": {
+        "displayName": "Imagen",
+        "icon": "image",
+        "description": "Componente para manejar una imagen."
+    },
+    "options": {},
+    "attributes": {
+        "media": {
+          "type": "media",
+          "allowedTypes": [
+            "images"
+          ],
+          "multiple": false,
+          "required": false
+        }
+    }
+}
